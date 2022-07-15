@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<style>
+			body{margin:0px;}
+			#topmenu{margin:0px;padding-left:2px;background-color:red;}
+			#topmenu>li{list-style:none;display:inline-block;
+			background-color:orange;padding:10px 0px;}
+			#topmenu>li>a{text-decoration:none;padding:10px 35px;}
+			#topmenu>li:hover{background-color:purple;}
+			#topmenu>li>a:hover{color:white;}
+			
+			#submenu{margin:0px;position:absolute;background-color:red;
+			margin-top:11px;padding-left:2px;width:150px;}
+			#submenu>li{list-style:none;display:block;
+			background-color:orange;padding:10px 0px;
+			margin-bottom:2px;}
+			#submenu>li>a{text-decoration:none;padding:10px 35px;}
+			#submenu>li:hover{background-color:purple;}
+			#submenu>li>a:hover{color:white;}
+			
+			#submenu1{margin:0px;position:absolute;background-color:red;
+			margin-left:151px;margin-top:-28px;padding-left:2px;width:200px;}
+			#submenu1>li{list-style:none;display:block;
+			background-color:orange;padding:10px 0px;
+			margin-bottom:2px;}
+			#submenu1>li>a{text-decoration:none;padding:10px 35px;}
+			#submenu1>li:hover{background-color:purple;}
+			#submenu1>li>a:hover{color:white;}
+			
+			#submenu{display:none;}
+			#submenu1{display:none;}
+			#topmenu>li:hover>#submenu{display:block;}
+			#submenu>li:hover>#submenu1{display:block;}
+		</style>
+	</head>
+	<body>
+		<ul id="topmenu">
+			<li><a href="">Home</a></li>
+			<li><a href="">About &#9660;</a>
+					<ul id="submenu">
+						<li><a href="">AIM</a></li>
+						<li><a href="">Vision</a></li>
+						<li><a href="">Course &#9658;</a>
+							<ul id="submenu1">
+								<li><a href="">Android</a></li>
+								<li><a href="">Mern</a></li>
+								<li><a href="">Python with Django</a></li>
+								<li><a href="">PHP</a></li>
+							</ul>
+						
+						</li>
+						<li><a href="">Service</a></li>
+					</ul>
+			</li>
+			<li><a href="">Contact</a>
+			<ul id="submenu">
+						<li><a href="">AIM</a></li>
+						<li><a href="">Vision</a></li>
+						<li><a href="">Course &#9658;</a>
+							<ul id="submenu1">
+								<li><a href="">Android</a></li>
+								<li><a href="">Mern</a></li>
+								<li><a href="">Python with Django</a></li>
+								<li><a href="">PHP</a></li>
+							</ul>
+						
+						</li>
+						<li><a href="">Service</a>
+						<ul id="submenu1">
+								<li><a href="">Android</a></li>
+								<li><a href="">Mern</a></li>
+								<li><a href="">Python with Django</a></li>
+								<li><a href="">PHP</a></li>
+							</ul>
+						
+						</li>
+					</ul>
+			</li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Login</a></li>
+		</ul>
+	</body>
+</html>
